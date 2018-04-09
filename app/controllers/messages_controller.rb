@@ -15,7 +15,7 @@ class MessagesController < ApplicationController
       ActionCable.server.broadcast 'web_notifications_channel',
 message: '<p>Hello World!</p>'
       puts "Test"
-      redirect_to 'index'
+      redirect_to @messages
     else
       render 'index'
     end
