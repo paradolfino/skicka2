@@ -12,7 +12,8 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(message_params)
     ActionCable.server.broadcast 'web_notifications_channel',
-message: '<p>Hello World!</p>' 
+message: '<p>Hello World!</p>'
+    puts "Test"
   end
 
   def edit
