@@ -10,6 +10,7 @@ class MessagesController < ApplicationController
   end
 
   def create
+    @message = Message.new(message_params)
   end
 
   def edit
