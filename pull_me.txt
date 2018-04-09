@@ -1,6 +1,11 @@
 
-[initial project setup]
-### 09/04/2018[21:05 - 21:09]:
-* initial project setup
+[testing actioncable]
+### 09/04/2018[21:10 - 22:09]:
 * create page controller
+* install yarn and jquery
+* generate channel
+* generate message model, migration, and controller
+* set up basic crud actions for messages controller
+* test actioncable
+* testing actioncable
 
