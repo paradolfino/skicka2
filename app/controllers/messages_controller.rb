@@ -11,9 +11,15 @@ class MessagesController < ApplicationController
 
   def create
     @message = Message.new(message_params)
-    ActionCable.server.broadcast 'web_notifications_channel',
+    if @message.save
+      ActionCable.server.broadcast 'web_notifications_channel',
 message: '<p>Hello World!</p>'
-    puts "Test"
+      puts "Test"
+      redirect_to 'index'
+    else
+      
+    end
+    
   end
 
   def edit
