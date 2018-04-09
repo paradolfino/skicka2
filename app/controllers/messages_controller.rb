@@ -21,4 +21,10 @@ class MessagesController < ApplicationController
 
   def destroy
   end
+  
+  private
+  
+    def message_params
+      params.require(:message).permit(:content, :created_at)
+    end
 end
