@@ -1,1 +1,6 @@
 
+[initial project setup]
+### 09/04/2018[21:05 - 21:09]:
+* initial project setup
+* create page controller
+
