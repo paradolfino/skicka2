@@ -17,7 +17,7 @@ message: '<p>Hello World!</p>'
       puts "Test"
       redirect_to 'index'
     else
-      
+      render 'index'
     end
     
   end
