@@ -10,3 +10,5 @@
 ##### 09/04/2018: 21:21 - 21:26:pool[generate channel]
 
 ##### 09/04/2018: 21:26 - 21:30:pool[generate message model, migration, and controller]
+
+##### 09/04/2018: 21:30 - 21:40:pool[set up basic crud actions for messages controller]
