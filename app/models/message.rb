@@ -3,6 +3,6 @@ class Message < ApplicationRecord
     
     def broadcast
        ActionCable.server.broadcast ‘web_notifications_channel’,
-message: ‘<p>Hello World!</p>’ 
+message: '<p>Hello World!</p>' 
     end
 end
